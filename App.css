@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#intro {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background: url(../src/Images/bglandingpage2x.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.left-col {
+  flex: 1;
+  margin-bottom: 50px;
+}
+
+.left-col h1 {
+  font-size: 65px;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+  padding-bottom: 38px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1rem;
+  width: fit-content;
+  font-family: Roboto, sans-serif;
+}
+
+.left-col p {
+  font-size: 40px;
+  line-height: 1.9rem;
+  color: white;
+  letter-spacing: 1px;
+  font-family: Roboto, sans-serif;
+}
+
+.right-col {
+  flex: 1;
+}
+
+.right-col form h1 {
+  color: gray;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.enphase_installer {
+  color: #f37321;
+  padding-bottom: 7px;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+}
+
+.enlighten {
+  margin-top: 37.5px;
+  margin-bottom: 36px;
+  width: 373px;
+  text-align: center;
+  font: Roboto;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.right-col .form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.field-group {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.right-col .form-input-fields {
+  border-radius: solid 4px;
+  border-bottom-width: thin;
+  width: 100%;
+  padding-left: 5px;
+  outline: 0;
+  font-size: 16px;
+  border-radius: grey;
+}
+
+.right-col .form-input-fields :focus {
+  outline: none;
+  background-color: white;
+}
+
+.form-input-fields:required:invalid {
+  border-color: red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 16px;
+  height: 15px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.form-input-fields:required:valid {
+  border-color: green;
+}
+
+.form-input-fields:focus:invalid {
+  border-color: red;
+}
+
+.form-input-fields:required:hover {
+  border-color: black;
+}
+
+.form-input-fields label {
+  left: 10px;
+}
+
+.right-col button[type="submit"] {
+  width: 100%;
+  height: 48px;
+  color: white;
+  background-color: #f3731f;
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  margin-top: 25px;
+}
+
+.right-col button:hover {
+  background-color: #dd7530;
+}
+
+.right-col .formlink {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.right-col .formlink a {
+  text-decoration: none;
+}
+
+.right-col .signup {
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.formlink a:hover {
+  color: #026ae3;
+}
+
+.right-col .form__links {
+  float: right;
+}
+
+.password-icon {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+  }
+  .left-col {
+    text-align: left;
+    padding-right: 50px;
+    padding-left: 20px;
+  }
+
+  .left-col h1 {
+    font-size: 96px;
+    line-height: 5.5rem;
+  }
+  .left-col p {
+    font-size: 48px;
+  }
+  .right-col {
+    max-width: 550px;
+    padding-left: 100px;
+  }
+  .right-col .form-container {
+    padding: 40px;
+  }
+}
